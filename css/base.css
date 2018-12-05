@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-color: #63B78F;
+  background-color: #162820;
   font-family: input-sans, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -33,8 +33,8 @@ li {
 }
 
 header {
-  height: 500px;
-  background-color: #162820;
+  height: 200px;
+  background-color: #63B78F;
   overflow: hidden;
   position: relative;
 }
@@ -46,27 +46,27 @@ header .hero-img {
 }
 header .hero-banner {
   position: absolute;
-  top: 50%;
+  bottom: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
   margin: 0 auto;
   text-align: center;
   font-weight: 700;
 }
 header .hero-banner h1, header .hero-banner h2 {
-  margin: 10px;
+  margin: 0;
 }
 header .hero-banner h1 {
-  font-size: 2.5em;
+  font-size: 1.8em;
 }
 header .hero-banner h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
 header .nav {
   position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translate(-5%, -50%);
+  top: 15%;
+  right: 50%;
+  transform: translate(50%, -15%);
   margin: 0 auto;
   text-align: center;
   font-size: 1.3em;
@@ -75,11 +75,24 @@ header .nav line {
   stroke: white;
   stroke-width: 5px;
 }
+header .nav .nav-list {
+  white-space: nowrap;
+}
+header .nav .nav-list li {
+  display: inline-block;
+  margin: 0 20px;
+}
+header .nav .nav-list li a {
+  display: block;
+}
+header .nav .nav-list .svg {
+  display: none;
+}
 
 footer {
   font-weight: 700;
   font-size: 1.2em;
-  background-color: #162820;
+  background-color: #63B78F;
   height: 100px;
   display: flex;
   justify-content: center;

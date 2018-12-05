@@ -6,6 +6,9 @@
 
         <?php include("includes/head.php");?>
 
+        <?php startblock('head') ?>
+        <?php endblock() ?>
+
     </head>
     <body>
         <header>
@@ -20,7 +23,7 @@
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php">Home</a>
                     </li>
-                    <li>
+                    <li class="svg">
                         <svg height="8" width="80">
                             <line x1="0" y1="0" x2="80" y2="0" />
                         </svg>
@@ -28,7 +31,7 @@
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Exhibitions") {?>active<?php }?>" href="exhibitions.php">Exhibitions</a>
                     </li>
-                    <li>
+                    <li class="svg">
                         <svg height="8" width="80">
                             <line x1="0" y1="0" x2="80" y2="0" />
                         </svg>
@@ -36,7 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Involvement") {?>active<?php }?>" href="involvement.php">Get Involved</a>
                     </li>
-                    <li>
+                    <li  class="svg">
                         <svg height="8" width="80">
                             <line x1="0" y1="0" x2="80" y2="0" />
                         </svg>
@@ -44,7 +47,7 @@
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Visit Us") {?>active<?php }?>" href="visit.php">Visit Us</a>
                     </li>
-                    <li>
+                    <li  class="svg">
                         <svg height="8" width="80">
                             <line x1="0" y1="0" x2="80" y2="0" />
                         </svg>

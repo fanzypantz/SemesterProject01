@@ -4,7 +4,7 @@ html, body
   outline: 0
 
 body
-  background-color: $bg
+  background-color: $primary
   font-family: input-sans, sans-serif
   font-style: normal
   font-weight: 100
@@ -28,8 +28,8 @@ li
 
 
 header
-  height: 500px
-  background-color: $primary
+  height: 200px
+  background-color: $bg
   overflow: hidden
   position: relative
 
@@ -42,26 +42,26 @@ header
 
   .hero-banner
     position: absolute
-    top: 50%
+    bottom: 20%
     left: 50%
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -20%)
     margin: 0 auto
     text-align: center
     font-weight: 700
 
     h1, h2
-      margin: 10px
+      margin: 0
 
     h1
-      font-size: 2.5em
-    h2
       font-size: 1.8em
+    h2
+      font-size: 1.4em
 
   .nav
     position: absolute
-    top: 50%
-    right: 5%
-    transform: translate(-5%, -50%)
+    top: 15%
+    right: 50%
+    transform: translate(50%, -15%)
     margin: 0 auto
     text-align: center
     font-size: 1.3em
@@ -70,11 +70,24 @@ header
       stroke: $font
       stroke-width: 5px
 
+    .nav-list
+      white-space: nowrap
+
+      li
+        display: inline-block
+        margin: 0 20px
+
+        a
+          display: block
+
+      .svg
+        display: none
+
 
 footer
   font-weight: 700
   font-size: 1.2em
-  background-color: $primary
+  background-color: $bg
   height: 100px
   display: flex
   justify-content: center

@@ -1,5 +1,62 @@
 <?php include 'layout.php' ?>
 
+<?php startblock('head') ?>
+    <style>
+        body {
+            background-color: #63B78F;
+        }
+
+        header {
+            height: 500px;
+            background-color: #162820;
+        }
+
+        header .hero-banner {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        header h1,
+        header h2 {
+            margin: 10px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+        }
+
+        header h2 {
+            font-size: 2em;
+        }
+
+        header .nav {
+            width: 175px;
+            margin: 0;
+            top: 50%;
+            right: 5%;
+            transform: translate(-5%, -50%);
+        }
+
+        header .nav .nav-list {
+            white-space: normal;
+        }
+
+        header .nav .nav-list li {
+            display: list-item;
+            margin: 0;
+        }
+
+        header .nav .nav-list .svg {
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #162820;
+        }
+    </style>
+<?php endblock() ?>
+
 <?php startblock('content') ?>
     <section class="container">
         <div id="about" class="column full">
