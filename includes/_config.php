@@ -19,6 +19,6 @@ switch ($_SERVER["SCRIPT_NAME"]) {
         break;
     default:
         $CURRENT_PAGE = "Index";
-        $PAGE_TITLE = "Welcome to my homepage!";
+        $PAGE_TITLE = "Welcome to your local Community Science Museum";
 }
 ?>

@@ -13,10 +13,7 @@
     <body>
         <header>
 
-            <div class="hero-img">
-
-            </div>
-
+            <div class="hero-img"></div>
 
             <nav class="nav">
                 <ul class="nav-list">

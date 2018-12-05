@@ -139,11 +139,11 @@ footer a {
   margin: 10px;
 }
 
-.full {
+.text-blob {
   width: 100%;
   text-align: center;
 }
-.full p, .full h1 {
+.text-blob p, .text-blob h1 {
   font-size: 1em;
   color: white;
 }
@@ -185,6 +185,39 @@ footer a {
 
 #for-researchers {
   background: url(../images/index_bg_06.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.exhibition .column {
+  height: 600px;
+}
+.exhibition .space-title {
+  font-size: 1.8em;
+}
+.exhibition .half {
+  width: 50%;
+}
+.exhibition .half p {
+  margin: 20px 120px;
+}
+.exhibition #cosmology {
+  background: url(../images/exhibition_bg_01.jpg) no-repeat center center;
+  background-size: cover;
+}
+.exhibition #evolution {
+  background: url(../images/exhibition_bg_02.jpg) no-repeat center center;
+  background-size: cover;
+}
+.exhibition #biology {
+  background: url(../images/exhibition_bg_03.jpg) no-repeat center center;
+  background-size: cover;
+}
+.exhibition #robotics {
+  background: url(../images/exhibition_bg_04.jpg) no-repeat center center;
+  background-size: cover;
+}
+.exhibition #ecology {
+  background: url(../images/exhibition_bg_05.jpg) no-repeat center center;
   background-size: cover;
 }
 

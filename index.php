@@ -59,7 +59,7 @@
 
 <?php startblock('content') ?>
     <section class="container">
-        <div id="about" class="column full">
+        <div id="about" class="column text-blob">
             <div class="text">
                 <p>
                     Come join us at the Community Science Museum where we’re committed to making science accessible to all.
@@ -85,7 +85,7 @@
 
         </div>
 
-        <div id="club" class="column full">
+        <div id="club" class="column text-blob">
             <div class="text">
                 <p>
                     During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
@@ -109,7 +109,7 @@
 
         </div>
 
-        <div id="entrance" class="column full">
+        <div id="entrance" class="column text-blob">
             <div class="text">
                 <p>
                     The entrance is free for all.
@@ -133,7 +133,7 @@
             <div id="for-teachers" class="img"></div>
         </div>
 
-        <div id="accessibility" class="column full">
+        <div id="accessibility" class="column text-blob">
             <div class="text">
                 <p>
                     The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
