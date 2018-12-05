@@ -62,7 +62,7 @@ header .hero-banner h1 {
 header .hero-banner h2 {
   font-size: 1.8em;
 }
-header .nav-container {
+header .nav {
   position: absolute;
   top: 50%;
   right: 5%;
@@ -71,10 +71,22 @@ header .nav-container {
   text-align: center;
   font-size: 1.3em;
 }
+header .nav line {
+  stroke: white;
+  stroke-width: 5px;
+}
 
 footer {
+  font-weight: 700;
+  font-size: 1.2em;
   background-color: #162820;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  margin: 0 20px;
 }
 
 .container {
@@ -109,7 +121,8 @@ footer {
   margin: 0 auto;
 }
 .text p {
-  font-size: 1.2em;
+  font-size: 14px;
+  line-height: 1.5em;
   margin: 10px;
 }
 
@@ -118,6 +131,7 @@ footer {
   text-align: center;
 }
 .full p, .full h1 {
+  font-size: 1em;
   color: white;
 }
 

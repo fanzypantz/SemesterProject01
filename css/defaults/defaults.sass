@@ -57,7 +57,7 @@ header
     h2
       font-size: 1.8em
 
-  .nav-container
+  .nav
     position: absolute
     top: 50%
     right: 5%
@@ -66,10 +66,22 @@ header
     text-align: center
     font-size: 1.3em
 
+    line
+      stroke: $font
+      stroke-width: 5px
+
 
 footer
+  font-weight: 700
+  font-size: 1.2em
   background-color: $primary
   height: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  a
+    margin: 0 20px
 
 .container
   max-width: 1920px
@@ -102,11 +114,14 @@ footer
   margin: 0 auto
 
   p
-    font-size: 1.2em
+    font-size: 14px
+    line-height: 1.5em
     margin: 10px
 
 .full
   width: 100%
   text-align: center
+
   p, h1
+    font-size: 1em
     color: $font
