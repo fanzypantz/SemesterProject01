@@ -1,6 +1,7 @@
 <?php include 'layout.php' ?>
 
 <?php startblock('content') ?>
+
     <section class="container exhibition">
 
         <div class="column">
@@ -62,4 +63,5 @@
         </div>
 
     </section>
+
 <?php endblock() ?>

@@ -1,6 +1,7 @@
 <?php include 'layout.php' ?>
 
 <?php startblock('head') ?>
+
     <style>
         body {
             background-color: #63B78F;
@@ -14,7 +15,6 @@
         header .hero-banner {
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
         }
 
         header h1,
@@ -40,11 +40,18 @@
 
         header .nav .nav-list {
             white-space: normal;
+            background-color: transparent;
+
         }
 
         header .nav .nav-list li {
             display: list-item;
             margin: 0;
+            background-color: transparent;
+        }
+
+        header .nav .nav-list li  a{
+            padding: 0;
         }
 
         header .nav .nav-list .svg {
@@ -54,10 +61,52 @@
         footer {
             background-color: #162820;
         }
+
+        @media screen and (max-width: 935px) {
+            header .hero-banner h1 {
+                white-space: normal;
+            }
+        }
+
+        @media screen and (max-width: 780px) {
+            header .hero-banner {
+                top: 70%;
+                left: 50%;
+
+            }
+
+            header .hero-banner h1 {
+                white-space: nowrap;
+            }
+
+            header .nav {
+                width: 200px;
+                top: 53%;
+                left: 50%;
+                transform: translateX(-50%)
+            }
+
+            header .nav .nav-list li {
+                display: inline-block;
+                margin: 2px;
+            }
+
+            header .nav .nav-list li a{
+                padding: 2px 10px;
+                background-color: #162820;
+            }
+
+            header .nav .nav-list .svg {
+                display: none;
+            }
+        }
+
     </style>
+
 <?php endblock() ?>
 
 <?php startblock('content') ?>
+
     <section class="container">
         <div id="about" class="column text-blob">
             <div class="text">
@@ -159,4 +208,5 @@
         </div>
 
     </section>
+
 <?php endblock() ?>

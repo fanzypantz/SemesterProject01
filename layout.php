@@ -3,10 +3,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title><?php print $PAGE_TITLE;?></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <?php include("includes/head.php");?>
+        <?php if ($CURRENT_PAGE == "Index") { ?>
+
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <?php } ?>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/gmx3mnm.css">
+        <link rel="stylesheet" href="css/base.css">
 
         <?php startblock('head') ?>
+
         <?php endblock() ?>
 
     </head>
@@ -65,6 +76,7 @@
 
 
         <?php startblock('content') ?>
+
         <?php endblock() ?>
 
         <footer>

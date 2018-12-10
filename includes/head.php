@@ -1,9 +1,0 @@
-<title><?php print $PAGE_TITLE;?></title>
-
-<?php if ($CURRENT_PAGE == "Index") { ?>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-<?php } ?>
-
-<link rel="stylesheet" href="https://use.typekit.net/gmx3mnm.css">
-<link rel="stylesheet" href="css/base.css">

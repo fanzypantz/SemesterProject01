@@ -1,0 +1,133 @@
+/* Media Queries Section */
+
+@media screen and (max-width: 1111px)
+
+  header
+    .hero-banner
+      h1
+        white-space: nowrap
+
+    .nav
+      .nav-list
+        a
+          margin: 0
+        li
+          margin: 2px
+
+  .column
+    .row
+      width: 50%
+
+  .text
+    margin: 0 auto
+
+  .exhibition
+    .column
+      min-height: 600px
+      height: auto
+
+    .half
+      p
+        margin: 20px 50px
+
+@media screen and (max-width: 780px)
+
+  header
+    height: 350px
+
+    .hero-banner
+      top: 25% !important
+
+    .nav
+      width: 200px
+      bottom: 34%
+
+      .nav-list
+        white-space: normal
+        background-color: transparent
+
+        a
+          margin: 0
+          background-color: $bg
+
+        li
+          width: 100%
+          display: inline-block
+          margin: 2px
+
+  footer
+    padding: 15px 0
+    flex-direction: column
+    height: 200px
+    justify-content: space-around
+
+  .column
+    .row
+      padding: 100px 0
+      margin: 0
+      width: 100%
+
+      p
+        margin: 10px 40px
+
+  .column:nth-child(even)
+    flex-direction: column
+    height: auto
+    position: relative
+    background-color: rgba(0, 0, 0, 0.8)
+
+    h1
+      color: $font
+
+    p
+      color: $font
+
+    .img
+      z-index: -10
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+
+  .text
+    width: 100%
+    margin: 0
+
+  .text-blob
+    height: auto
+
+    .text
+      margin: 100px 0
+
+  .exhibition
+    .column
+      height: auto
+      flex-direction: column
+
+      .half
+        min-height: 600px
+        width: 100%
+
+        p
+          margin: 20px
+
+
+@media screen and (max-width: 520px)
+
+  header
+    height: 500px
+
+    .nav
+      bottom: 30%
+
+    .hero-banner
+      top: 25% !important
+
+      h1
+        white-space: normal !important
+        margin-bottom: 30px
+
+@media screen and (max-width: 380px)
+
+  .column

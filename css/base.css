@@ -1,3 +1,4 @@
+/* Default Section */
 html, body {
   padding: 0;
   margin: 0;
@@ -35,7 +36,6 @@ li {
 header {
   height: 200px;
   background-color: #63B78F;
-  overflow: hidden;
   position: relative;
 }
 header .hero-img {
@@ -46,9 +46,9 @@ header .hero-img {
 }
 header .hero-banner {
   position: absolute;
-  bottom: 20%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -50%);
   margin: 0 auto;
   text-align: center;
   font-weight: 700;
@@ -64,12 +64,13 @@ header .hero-banner h2 {
 }
 header .nav {
   position: absolute;
-  top: 15%;
+  bottom: 0;
   right: 50%;
-  transform: translate(50%, -15%);
+  transform: translate(50%, 50%);
   margin: 0 auto;
   text-align: center;
   font-size: 1.3em;
+  z-index: 10;
 }
 header .nav line {
   stroke: white;
@@ -77,6 +78,8 @@ header .nav line {
 }
 header .nav .nav-list {
   white-space: nowrap;
+  background-color: #63B78F;
+  padding: 5px;
 }
 header .nav .nav-list li {
   display: inline-block;
@@ -84,6 +87,8 @@ header .nav .nav-list li {
 }
 header .nav .nav-list li a {
   display: block;
+  margin: 0;
+  padding: 2px 10px;
 }
 header .nav .nav-list .svg {
   display: none;
@@ -130,7 +135,6 @@ footer a {
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 100%;
   margin: 0 auto;
 }
 .text p {
@@ -148,6 +152,7 @@ footer a {
   color: white;
 }
 
+/* Index Section */
 #about {
   background: url(../images/index_bg_01.jpg) no-repeat center center;
   background-size: cover;
@@ -188,6 +193,7 @@ footer a {
   background-size: cover;
 }
 
+/* Exhibition Section */
 .exhibition .column {
   height: 600px;
 }
@@ -219,6 +225,181 @@ footer a {
 .exhibition #ecology {
   background: url(../images/exhibition_bg_05.jpg) no-repeat center center;
   background-size: cover;
+}
+
+/* Visit Section */
+.contact {
+  color: white;
+  min-height: calc(100vh - 100px - 200px);
+  background: url(../images/visit_bg_01.jpg) no-repeat center center;
+  background-size: cover;
+}
+.contact p {
+  color: white;
+}
+.contact table {
+  width: 100%;
+}
+.contact table tr td:last-child {
+  text-align: right;
+}
+.contact .column {
+  height: calc(100vh - 100px - 200px);
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .row {
+  width: 50%;
+  min-height: 520px;
+  padding: 0 180px;
+}
+.contact .visit {
+  border-right: 2px solid white;
+}
+.contact .admission {
+  border-left: 2px solid white;
+}
+
+.info h1 {
+  color: white;
+  text-align: center;
+}
+.info h2 {
+  font-size: 1em;
+  text-align: center;
+  background-color: #63B78F;
+  padding: 5px 0;
+}
+
+/* Media Queries Section */
+@media screen and (max-width: 1111px) {
+  header .hero-banner h1 {
+    white-space: nowrap;
+  }
+  header .nav .nav-list a {
+    margin: 0;
+  }
+  header .nav .nav-list li {
+    margin: 2px;
+  }
+
+  .column .row {
+    width: 50%;
+  }
+
+  .text {
+    margin: 0 auto;
+  }
+
+  .exhibition .column {
+    min-height: 600px;
+    height: auto;
+  }
+  .exhibition .half p {
+    margin: 20px 50px;
+  }
+}
+@media screen and (max-width: 780px) {
+  header {
+    height: 350px;
+  }
+  header .hero-banner {
+    top: 25% !important;
+  }
+  header .nav {
+    width: 200px;
+    bottom: 34%;
+  }
+  header .nav .nav-list {
+    white-space: normal;
+    background-color: transparent;
+  }
+  header .nav .nav-list a {
+    margin: 0;
+    background-color: #63B78F;
+  }
+  header .nav .nav-list li {
+    width: 100%;
+    display: inline-block;
+    margin: 2px;
+  }
+
+  footer {
+    padding: 15px 0;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+  }
+
+  .column .row {
+    padding: 100px 0;
+    margin: 0;
+    width: 100%;
+  }
+  .column .row p {
+    margin: 10px 40px;
+  }
+
+  .column:nth-child(even) {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .column:nth-child(even) h1 {
+    color: white;
+  }
+  .column:nth-child(even) p {
+    color: white;
+  }
+  .column:nth-child(even) .img {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .text-blob {
+    height: auto;
+  }
+  .text-blob .text {
+    margin: 100px 0;
+  }
+
+  .exhibition .column {
+    height: auto;
+    flex-direction: column;
+  }
+  .exhibition .column .half {
+    min-height: 600px;
+    width: 100%;
+  }
+  .exhibition .column .half p {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  header {
+    height: 500px;
+  }
+  header .nav {
+    bottom: 30%;
+  }
+  header .hero-banner {
+    top: 25% !important;
+  }
+  header .hero-banner h1 {
+    white-space: normal !important;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */
