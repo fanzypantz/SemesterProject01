@@ -1,13 +1,5 @@
 <?php include 'layout.php' ?>
 
-<?php //startblock('head') ?>
-<!--    <style>-->
-<!--        body {-->
-<!--            min-height: 100vh;-->
-<!--        }-->
-<!--    </style>-->
-<?php //endblock() ?>
-
 <?php startblock('content') ?>
 
     <section class="container contact">

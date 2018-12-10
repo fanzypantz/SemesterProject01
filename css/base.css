@@ -345,7 +345,7 @@ footer a {
     flex-direction: column;
     height: auto;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(22, 40, 32, 0.95);
   }
   .column:nth-child(even) h1 {
     color: white;

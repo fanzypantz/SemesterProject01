@@ -4,7 +4,7 @@
 
     <style>
         body {
-            background-color: #63B78F;
+            background-color: white;
         }
 
         header {
@@ -81,7 +81,7 @@
 
             header .nav {
                 width: 200px;
-                top: 53%;
+                top: 48%;
                 left: 50%;
                 transform: translateX(-50%)
             }
@@ -98,6 +98,12 @@
 
             header .nav .nav-list .svg {
                 display: none;
+            }
+        }
+
+        @media screen and (max-width: 520px) {
+            header .nav {
+                top: 53%;
             }
         }
 
