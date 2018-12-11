@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background-color: #162820;
+  background-color: #0a2135;
   font-family: input-sans, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -35,7 +35,7 @@ li {
 
 header {
   height: 200px;
-  background-color: #63B78F;
+  background-color: #0088FF;
   position: relative;
 }
 header .hero-img {
@@ -78,7 +78,7 @@ header .nav line {
 }
 header .nav .nav-list {
   white-space: nowrap;
-  background-color: #63B78F;
+  background-color: #0088FF;
   padding: 5px;
 }
 header .nav .nav-list li {
@@ -97,7 +97,7 @@ header .nav .nav-list .svg {
 footer {
   font-weight: 700;
   font-size: 1.2em;
-  background-color: #63B78F;
+  background-color: #0088FF;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -244,7 +244,8 @@ footer a {
   text-align: right;
 }
 .contact .column {
-  height: calc(100vh - 100px - 200px);
+  height: auto;
+  min-height: calc(100vh - 100px - 200px);
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -268,7 +269,7 @@ footer a {
 .info h2 {
   font-size: 1em;
   text-align: center;
-  background-color: #63B78F;
+  background-color: #0088FF;
   padding: 5px 0;
 }
 
@@ -317,7 +318,7 @@ footer a {
   }
   header .nav .nav-list a {
     margin: 0;
-    background-color: #63B78F;
+    background-color: #0088FF;
   }
   header .nav .nav-list li {
     width: 100%;
@@ -345,7 +346,7 @@ footer a {
     flex-direction: column;
     height: auto;
     position: relative;
-    background-color: rgba(22, 40, 32, 0.95);
+    background-color: rgba(10, 33, 53, 0.95);
   }
   .column:nth-child(even) h1 {
     color: white;
@@ -385,6 +386,21 @@ footer a {
   .exhibition .column .half p {
     margin: 20px;
   }
+
+  .contact .column {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+  .contact .column .row {
+    margin: 50px 0;
+    min-height: 510px;
+    border: none;
+    width: 80%;
+    padding: 0;
+  }
+  .contact .column .row p {
+    margin: 16px 0;
+  }
 }
 @media screen and (max-width: 520px) {
   header {
@@ -399,6 +415,37 @@ footer a {
   header .hero-banner h1 {
     white-space: normal !important;
     margin-bottom: 30px;
+  }
+
+  .contact .column .row {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .column .row p {
+    margin: 10px 5px;
+  }
+}
+/* Visit Media Queries Section */
+@media screen and (max-width: 1920px) {
+  .contact .row {
+    padding: 0 100px;
+  }
+}
+@media screen and (max-width: 1554px) {
+  .contact .row {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .contact .row {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1284px) {
+  .contact .row {
+    padding-top: 40px;
+    min-height: 650px;
   }
 }
 

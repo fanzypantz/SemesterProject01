@@ -9,7 +9,7 @@
 
         header {
             height: 500px;
-            background-color: #162820;
+            background-color: #0a2135;
         }
 
         header .hero-banner {
@@ -59,7 +59,7 @@
         }
 
         footer {
-            background-color: #162820;
+            background-color: #0a2135;
         }
 
         @media screen and (max-width: 935px) {
@@ -93,7 +93,7 @@
 
             header .nav .nav-list li a{
                 padding: 2px 10px;
-                background-color: #162820;
+                background-color: #0a2135;
             }
 
             header .nav .nav-list .svg {
