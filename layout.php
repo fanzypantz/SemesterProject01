@@ -1,7 +1,7 @@
 <?php require_once 'ti.php' ?>
 <?php include("includes/_config.php");?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title><?php print $PAGE_TITLE;?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <meta name="keywords" content="" />
 
         <?php } ?>
-        
+
         <link rel="stylesheet" href="https://use.typekit.net/gmx3mnm.css">
         <link rel="stylesheet" href="css/base.css">
 

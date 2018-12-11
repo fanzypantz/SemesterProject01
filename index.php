@@ -128,7 +128,7 @@
 
         <div class="column">
             <div class="row text">
-                <h1>What We Do</h1>
+                <h2>What We Do</h2>
                 <p>
                     The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
                 </p>
@@ -152,7 +152,7 @@
         <div class="column">
             <div id="for-kids" class="img"></div>
             <div class="row text">
-                <h1>For Kids</h1>
+                <h2>For Kids</h2>
                 <p>
                     Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
                 </p>
@@ -177,7 +177,7 @@
 
         <div class="column">
             <div class="row text">
-                <h1>For Teachers</h1>
+                <h2>For Teachers</h2>
                 <p>
                     As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
                 </p>
@@ -204,7 +204,7 @@
 
         <div class="column">
             <div class="row text">
-                <h1>For Researchers</h1>
+                <h2>For Researchers</h2>
                 <p>
                     Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.
                 </p>

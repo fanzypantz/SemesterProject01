@@ -112,7 +112,7 @@ footer a {
   width: 100%;
   margin: 0 auto;
 }
-.container p, .container h1 {
+.container p, .container h1, .container h2 {
   color: black;
 }
 
@@ -234,7 +234,7 @@ footer a {
   background: url(../images/visit_bg_01.jpg) no-repeat center center;
   background-size: cover;
 }
-.contact p {
+.contact p, .contact h2 {
   color: white;
 }
 .contact table {
@@ -271,6 +271,12 @@ footer a {
   text-align: center;
   background-color: #0088FF;
   padding: 5px 0;
+}
+
+/* Involvement Section */
+.involvement .row {
+  padding: 0 30px;
+  border: none;
 }
 
 /* Media Queries Section */
@@ -431,21 +437,37 @@ footer a {
   .contact .row {
     padding: 0 100px;
   }
+
+  .involvement .row {
+    padding: 50px 0;
+  }
 }
 @media screen and (max-width: 1554px) {
   .contact .row {
     padding: 0 60px;
+  }
+
+  .involvement .row {
+    padding: 50px 0;
   }
 }
 @media screen and (max-width: 1400px) {
   .contact .row {
     padding: 0 30px;
   }
+
+  .involvement .row {
+    padding: 50px 0;
+  }
 }
 @media screen and (max-width: 1284px) {
   .contact .row {
     padding-top: 40px;
     min-height: 650px;
+  }
+
+  .involvement .row {
+    padding: 50px 0;
   }
 }
 
