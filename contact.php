@@ -21,7 +21,24 @@
             <p class="contact-bg">(973)925-9393</p>
         </div>
     </div>
-    <div id="map" class="contact-column"></div>
+    <div id="address_map" class="contact-column">
+        <div id="address">
+            <img id="map_bg" src="images/map_bg.svg">
+            <div id="address-text">
+                <div class="address-text">
+                    <p>Community</p>
+                    <p>Science Museum</p>
+                </div>
+                <div class="address-text">
+                    <p>Fantasyroad 22</p>
+                    <p>4838 Arendal</p>
+                </div>
+                <a href="#">Get Directions</a>
+            </div>
+
+        </div>
+        <div id="map"></div>
+    </div>
 
     <script>
         // Initialize and add the map

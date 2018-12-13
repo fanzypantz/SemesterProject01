@@ -293,6 +293,54 @@ footer a {
   stroke: white;
   stroke-width: 10px;
 }
+#contact #address_map {
+  position: relative;
+}
+#contact #address_map #map {
+  width: 100%;
+  min-height: 600px;
+}
+#contact #address_map #address {
+  z-index: 9;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contact #address_map #address #address-text {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+#contact #address_map #address #address-text p {
+  margin: 2px;
+}
+#contact #address_map #address #address-text .address-text {
+  margin: 10px auto;
+}
+#contact #address_map #address #address-text a {
+  font-weight: 100;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  margin: 10px auto;
+  height: 32px;
+  line-height: 32px;
+  width: 80%;
+  border-radius: 5px;
+}
+#contact #address_map #address #map_bg {
+  width: 100%;
+}
 #contact .contact-column {
   min-height: 600px;
   width: 100%;
