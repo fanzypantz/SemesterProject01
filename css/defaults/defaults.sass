@@ -19,6 +19,9 @@ a
   text-decoration: none
   font-weight: 700
 
+  &:hover
+    color: $primary
+
 ul
   list-style-type: none
   margin: 0
@@ -31,9 +34,9 @@ li
 
 header
   height: $header-height
-  background-color: $primary
+  background-color: $bg
   position: relative
-  border-bottom: 2px solid $primary
+  border-bottom: 2px solid $bg
 
   .hero-img
     width: 50%
@@ -60,7 +63,7 @@ header
 
   .nav
     position: absolute
-    bottom: 0
+    bottom: 15%
     right: 50%
     transform: translate(50%, 50%)
     margin: 0 auto
@@ -74,7 +77,6 @@ header
 
     .nav-list
       white-space: nowrap
-      background-color: $primary
       padding: 5px
 
       li
@@ -93,12 +95,12 @@ header
 footer
   font-weight: 700
   font-size: 1.2em
-  background-color: $primary
+  background-color: $bg
   height: $footer-height
   display: flex
   justify-content: center
   align-items: center
-  border-top: 2px solid $primary
+  border-top: 2px solid $bg
 
   a
     margin: 0 20px

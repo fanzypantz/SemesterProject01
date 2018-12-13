@@ -1,5 +1,11 @@
 <?php include 'layout.php' ?>
 
+<?php startblock('head') ?>
+
+<script src="js/app.js"></script>
+
+<?php endblock() ?>
+
 <?php startblock('content') ?>
 
 <section id="contact" class="container contact">
@@ -33,12 +39,17 @@
                     <p>Fantasyroad 22</p>
                     <p>4838 Arendal</p>
                 </div>
-                <a href="#">Get Directions</a>
+                <a href="https://www.google.com/maps/dir//Kløckers+Hus+-+Arendal+Town+Museum,+Nedre+Tyholmsvei+14,+4836+Arendal/@58.4600905,8.7638325,16.25z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464794dda4c19353:0xb4260b7a4a19866b!2m2!1d8.767305!2d58.458805" target="_blank">Get Directions</a>
             </div>
 
         </div>
+        <div id="address-button" style="display: none">
+            <p>Show Address</p>
+        </div>
         <div id="map"></div>
     </div>
+
+
 
     <script>
         // Initialize and add the map
