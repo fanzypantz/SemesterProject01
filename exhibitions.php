@@ -1,5 +1,11 @@
 <?php include 'layout.php' ?>
 
+<?php startblock('head') ?>
+
+<script src="js/exhibitions.js"></script>
+
+<?php endblock() ?>
+
 <?php startblock('content') ?>
 
     <section class="container exhibition">

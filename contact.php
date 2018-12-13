@@ -1,11 +1,5 @@
 <?php include 'layout.php' ?>
 
-<?php startblock('head') ?>
-
-<script src="js/app.js"></script>
-
-<?php endblock() ?>
-
 <?php startblock('content') ?>
 
 <section id="contact" class="container contact">

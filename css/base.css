@@ -150,6 +150,7 @@ footer a {
 .text-blob {
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
 .text-blob p, .text-blob h1 {
   font-size: 1em;

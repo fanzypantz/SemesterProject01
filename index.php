@@ -104,6 +104,8 @@
 
     </style>
 
+    <script src="js/index.js"></script>
+
 <?php endblock() ?>
 
 <?php startblock('content') ?>

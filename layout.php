@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/gmx3mnm.css">
         <link rel="stylesheet" href="css/base.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
 
         <?php startblock('head') ?>
 
