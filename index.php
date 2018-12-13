@@ -88,7 +88,7 @@
 
             header .nav .nav-list li a{
                 padding: 2px 10px;
-                background-color: #0a2135;
+                background-color: #0088FF;
             }
 
             header .nav .nav-list .svg {

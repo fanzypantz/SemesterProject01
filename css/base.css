@@ -469,7 +469,7 @@ footer a {
     position: relative;
     background-color: rgba(10, 33, 53, 0.95);
   }
-  .column:nth-child(even) h1 {
+  .column:nth-child(even) h2 {
     color: white;
   }
   .column:nth-child(even) p {
