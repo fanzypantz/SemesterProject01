@@ -31,13 +31,13 @@ li
 
 header
   height: $header-height
-  background-color: $bg
+  background-color: $primary
   position: relative
+  border-bottom: 2px solid $primary
 
   .hero-img
     width: 50%
     height: 100%
-
     background: url(../images/hero_bg.jpg) no-repeat
     background-size: cover
 
@@ -74,7 +74,7 @@ header
 
     .nav-list
       white-space: nowrap
-      background-color: $bg
+      background-color: $primary
       padding: 5px
 
       li
@@ -93,11 +93,12 @@ header
 footer
   font-weight: 700
   font-size: 1.2em
-  background-color: $bg
+  background-color: $primary
   height: $footer-height
   display: flex
   justify-content: center
   align-items: center
+  border-top: 2px solid $primary
 
   a
     margin: 0 20px

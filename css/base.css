@@ -35,8 +35,9 @@ li {
 
 header {
   height: 200px;
-  background-color: #0088FF;
+  background-color: #0a2135;
   position: relative;
+  border-bottom: 2px solid #0a2135;
 }
 header .hero-img {
   width: 50%;
@@ -78,7 +79,7 @@ header .nav line {
 }
 header .nav .nav-list {
   white-space: nowrap;
-  background-color: #0088FF;
+  background-color: #0a2135;
   padding: 5px;
 }
 header .nav .nav-list li {
@@ -97,11 +98,12 @@ header .nav .nav-list .svg {
 footer {
   font-weight: 700;
   font-size: 1.2em;
-  background-color: #0088FF;
-  height: 100px;
+  background-color: #0a2135;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid #0a2135;
 }
 footer a {
   margin: 0 20px;
@@ -230,7 +232,7 @@ footer a {
 /* Visit Section */
 .contact {
   color: white;
-  min-height: calc(100vh - 100px - 200px);
+  min-height: calc(100vh - 80px - 200px - 4px);
   background: url(../images/visit_bg_01.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -245,7 +247,7 @@ footer a {
 }
 .contact .column {
   height: auto;
-  min-height: calc(100vh - 100px - 200px);
+  min-height: calc(100vh - 80px - 200px - 4px);
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -274,9 +276,51 @@ footer a {
 }
 
 /* Involvement Section */
+.involvement {
+  background: url(../images/involvement_bg_01.jpg) no-repeat center center;
+}
 .involvement .row {
-  padding: 0 30px;
+  padding: 50px 30px;
   border: none;
+}
+
+#contact {
+  min-height: auto;
+  height: auto;
+  background: url(../images/contact_bg_01.jpg) no-repeat center center;
+}
+#contact svg {
+  stroke: white;
+  stroke-width: 10px;
+}
+#contact .contact-column {
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#contact .contact-column #contact-us {
+  margin-bottom: 50px;
+}
+#contact .contact-column #contact-us p {
+  margin: 5px;
+}
+#contact .contact-column #contact-us h2 {
+  margin: 0;
+  font-size: 2.2em;
+}
+#contact .contact-column .contact-info {
+  min-width: 500px;
+}
+#contact .contact-column .contact-info .contact-bg {
+  color: black;
+  background-color: white;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
 }
 
 /* Media Queries Section */

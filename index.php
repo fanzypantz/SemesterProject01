@@ -9,7 +9,6 @@
 
         header {
             height: 500px;
-            background-color: #0a2135;
         }
 
         header .hero-banner {
@@ -56,10 +55,6 @@
 
         header .nav .nav-list .svg {
             display: inline-block;
-        }
-
-        footer {
-            background-color: #0a2135;
         }
 
         @media screen and (max-width: 935px) {
