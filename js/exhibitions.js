@@ -21,7 +21,7 @@ $(document).ready(function() {
             if ($currentTarget.attr('id') !== 'biology') {
                 $currentSibling = $currentTarget.siblings('.text-blob');
 
-                $currentSibling.find('p,h1').animate({
+                $currentSibling.find('p,h2').animate({
                     opacity: 0
                 }, '50');
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
             $currentSibling = $currentTarget.siblings('.text-blob');
 
-            $currentSibling.find('p,h1').delay('400').animate({
+            $currentSibling.find('p,h2').delay('400').animate({
                 opacity: 1
             }, '100');
 

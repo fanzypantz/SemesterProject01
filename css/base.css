@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background-color: #0a2135;
+  background-color: #0059a7;
   font-family: input-sans, sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -76,7 +76,7 @@ header .nav {
   z-index: 10;
 }
 header .nav line {
-  stroke: #B41912;
+  stroke: white;
   stroke-width: 5px;
 }
 header .nav .nav-list {
@@ -110,7 +110,6 @@ footer a {
 }
 
 .container {
-  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
 }
