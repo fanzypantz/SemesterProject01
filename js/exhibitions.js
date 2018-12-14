@@ -3,14 +3,20 @@ $(document).ready(function() {
     let isAnimating = false;
 
     $('#cosmology,#evolution,#biology,#robotics,#ecology').click(function(e) {
-        if (!isAnimating && $(window).width() > 780) {
+        if (!isAnimating && $(window).width() > 780 && $currentTarget === null) {
             $currentTarget = $(this);
             isAnimating = true;
 
             $currentTarget.animate({
                 width: '100vw',
                 height: '100vh'
-            }, '500');
+            }, '500', function () {
+                $('html, body').animate({
+                    scrollTop: ($currentTarget.offset().top)
+                },250 ,function () {
+                    setTimeout(disableAnimation, 100);
+                });
+            });
 
             if ($currentTarget.attr('id') !== 'biology') {
                 $currentSibling = $currentTarget.siblings('.text-blob');
@@ -29,13 +35,9 @@ $(document).ready(function() {
                 }, '500');
             }
 
-            $('html, body').animate({
-                scrollTop: ($currentTarget.offset().top)
-            },500 ,function () {
-                setTimeout(disableAnimation, 100);
-            });
-
-
+        } else if ($currentTarget !== null && !isAnimating) {
+            console.log('hey');
+            resetCSS();
         }
 
     });

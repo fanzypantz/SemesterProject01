@@ -5,18 +5,11 @@
     <head>
         <title><?php print $PAGE_TITLE;?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <?php if ($CURRENT_PAGE == "Index") { ?>
-
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-
-        <?php } ?>
-
+        <meta name="keywords" content="museum community science exhibitions robotics AI biology history cosmology" />
+        <meta name="description" content="Come see your local community science museum for all we have to offer, we have plenty of exhibitions about fantastic subjects like cosmlogy, biology and robotics" />
         <link rel="stylesheet" href="https://use.typekit.net/gmx3mnm.css">
         <link rel="stylesheet" href="css/base.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/app.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <?php startblock('head') ?>
 

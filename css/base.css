@@ -38,9 +38,9 @@ li {
 
 header {
   height: 200px;
-  background-color: #0088FF;
+  background-color: #0059a7;
   position: relative;
-  border-bottom: 2px solid #0088FF;
+  border-bottom: 2px solid #0059a7;
 }
 header .hero-img {
   width: 50%;
@@ -100,12 +100,12 @@ header .nav .nav-list .svg {
 footer {
   font-weight: 700;
   font-size: 1.2em;
-  background-color: #0088FF;
+  background-color: #0059a7;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid #0088FF;
+  border-top: 2px solid #0059a7;
 }
 footer a {
   margin: 0 20px;
@@ -274,7 +274,7 @@ footer a {
 .info h2 {
   font-size: 1em;
   text-align: center;
-  background-color: #0088FF;
+  background-color: #0059a7;
   padding: 5px 0;
 }
 
@@ -372,7 +372,7 @@ footer a {
 }
 #contact .contact-column .contact-info .contact-bg {
   color: white;
-  background-color: #0088FF;
+  background-color: #0059a7;
   font-size: 14px;
   line-height: 40px;
   font-weight: 700;
@@ -385,7 +385,7 @@ footer a {
   top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #0088FF;
+  background-color: #0059a7;
 }
 #contact #address-button p {
   line-height: 30px;
@@ -439,7 +439,7 @@ footer a {
   }
   header .nav .nav-list a {
     margin: 0;
-    background-color: #0088FF;
+    background-color: #0059a7;
   }
   header .nav .nav-list li {
     width: 100%;

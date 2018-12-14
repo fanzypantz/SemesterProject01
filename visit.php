@@ -2,9 +2,9 @@
 
 <?php startblock('content') ?>
 
-    <section class="container contact">
-        <div class="column">
-            <div class="row info visit">
+    <main class="container contact">
+        <section class="column">
+            <article class="row info visit">
                 <h1>Visit Us</h1>
                 <h2>Location</h2>
                 <p>
@@ -48,9 +48,9 @@
                     Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
                 </p>
 
-            </div>
+            </article>
 
-            <div class="row info admission">
+            <article class="row info admission">
                 <h1>Admission</h1>
                 <h2>Entrance Fee</h2>
                 <p>
@@ -72,8 +72,8 @@
                     There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
                 </p>
 
-            </div>
-        </div>
-    </section>
+            </article>
+        </section>
+    </main>
 
 <?php endblock() ?>

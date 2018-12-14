@@ -3,7 +3,7 @@ $(document).ready(function() {
     let isAnimating = false;
 
     $('.text-blob').click(function(e) {
-        if (!isAnimating) {
+        if (!isAnimating && $currentTarget === null) {
             $currentTarget = $(this);
 
             isAnimating = true;
@@ -21,6 +21,8 @@ $(document).ready(function() {
             function disableAnimation() {
                 isAnimating = false;
             }
+        } else if ($currentTarget !== null && !isAnimating) {
+            resetCSS();
         }
 
     });
@@ -44,6 +46,7 @@ $(document).ready(function() {
 
             function disableAnimation() {
                 isAnimating = false;
+                $currentTarget = null;
             }
 
             $currentTarget.removeAttr('style');

@@ -88,7 +88,7 @@
 
             header .nav .nav-list li a{
                 padding: 2px 10px;
-                background-color: #0088FF;
+                background-color: #0059a7;
             }
 
             header .nav .nav-list .svg {
@@ -104,14 +104,14 @@
 
     </style>
 
-    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
 <?php endblock() ?>
 
 <?php startblock('content') ?>
 
-    <section class="container">
-        <div id="about" class="column text-blob">
+    <main class="container">
+        <article id="about" class="column text-blob">
             <div class="text">
                 <p>
                     Come join us at the Community Science Museum where we’re committed to making science accessible to all.
@@ -119,11 +119,11 @@
                 <p>
                     Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
                 </p>
-            </div>
+            </div>http://test.andreas-tollanes.com/index.php
 
-        </div>
+        </article>
 
-        <div class="column">
+        <article class="column">
             <div class="row text">
                 <h2>What We Do</h2>
                 <p>
@@ -135,18 +135,18 @@
             </div>
             <div id="what-we-do" class="img"></div>
 
-        </div>
+        </article>
 
-        <div id="club" class="column text-blob">
+        <article id="club" class="column text-blob">
             <div class="text">
                 <p>
                     During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
                 </p>
             </div>
 
-        </div>
+        </article>
 
-        <div class="column">
+        <article class="column">
             <div id="for-kids" class="img"></div>
             <div class="row text">
                 <h2>For Kids</h2>
@@ -159,9 +159,9 @@
                 </p>
             </div>
 
-        </div>
+        </article>
 
-        <div id="entrance" class="column text-blob">
+        <article id="entrance" class="column text-blob">
             <div class="text">
                 <p>
                     The entrance is free for all.
@@ -170,9 +170,9 @@
                     There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
                 </p>
             </div>
-        </div>
+        </article>
 
-        <div class="column">
+        <article class="column">
             <div class="row text">
                 <h2>For Teachers</h2>
                 <p>
@@ -183,9 +183,9 @@
                 </p>
             </div>
             <div id="for-teachers" class="img"></div>
-        </div>
+        </article>
 
-        <div id="accessibility" class="column text-blob">
+        <article id="accessibility" class="column text-blob">
             <div class="text">
                 <p>
                     The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
@@ -197,9 +197,9 @@
                     Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
                 </p>
             </div>
-        </div>
+        </article>
 
-        <div class="column">
+        <article class="column">
             <div class="row text">
                 <h2>For Researchers</h2>
                 <p>
@@ -208,8 +208,8 @@
             </div>
             <div id="for-researchers" class="img">
             </div>
-        </div>
+        </article>
 
-    </section>
+    </main>
 
 <?php endblock() ?>
