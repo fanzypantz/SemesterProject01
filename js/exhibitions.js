@@ -36,7 +36,6 @@ $(document).ready(function() {
             }
 
         } else if ($currentTarget !== null && !isAnimating) {
-            console.log('hey');
             resetCSS();
         }
 

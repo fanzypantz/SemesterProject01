@@ -5,7 +5,7 @@
     <main class="container contact involvement">
         <section class="column">
             <article class="row info visit">
-                <h1>Get Involved</h1>
+                <h2 class="info-title">Get Involved</h2>
                 <h2>Support</h2>
                 <p>
                     There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.

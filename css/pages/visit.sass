@@ -2,11 +2,11 @@
 
 .contact
   color: $font
-  min-height: calc(100vh -  #{$footer-height} - #{$header-height} - 4px)
+  min-height: calc(100vh -  #{$footer-height} - #{$header-height})
   background: url(../images/visit_bg_01.jpg) no-repeat center center
   background-size: cover
 
-  p ,h2
+  p, h2
     color: $font
 
   table
@@ -17,7 +17,7 @@
 
   .column
     height: auto
-    min-height: calc(100vh -  #{$footer-height} - #{$header-height} - 4px)
+    min-height: calc(100vh -  #{$footer-height} - #{$header-height})
     flex-direction: row
     justify-content: space-around
     align-items: center
@@ -28,20 +28,22 @@
     padding: 0 180px
 
   .visit
-    border-right: 2px solid $font
+    border-right: 2px solid $secondary
 
   .admission
-    border-left: 2px solid $font
+    border-left: 2px solid $secondary
 
 .info
-  h1
+  .info-title
+    font-size: 1.17em
     color: $font
     text-align: center
+    background-color: transparent
 
   h2
     font-size: 1em
     text-align: center
-    background-color: $bg
+    background-color: $secondary
     padding: 5px 0
 
 

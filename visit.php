@@ -5,7 +5,7 @@
     <main class="container contact">
         <section class="column">
             <article class="row info visit">
-                <h1>Visit Us</h1>
+                <h2 class="info-title">Visit Us</h2>
                 <h2>Location</h2>
                 <p>
                     The museum is located at fantasyroad 22, Arendal.
@@ -51,7 +51,7 @@
             </article>
 
             <article class="row info admission">
-                <h1>Admission</h1>
+                <h2 class="info-title">Admission</h2>
                 <h2>Entrance Fee</h2>
                 <p>
                     The entrance is free for all.
