@@ -104,6 +104,10 @@
 
     </style>
 
+<?php endblock() ?>
+
+<?php startblock('scripts') ?>
+
     <script type="text/javascript" src="js/index.js"></script>
 
 <?php endblock() ?>
@@ -119,7 +123,7 @@
                 <p>
                     Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
                 </p>
-            </div>http://test.andreas-tollanes.com/index.php
+            </div>
 
         </article>
 

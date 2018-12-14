@@ -3,7 +3,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php print $PAGE_TITLE;?></title>
+        <title>Community Science Museum - <?php print $PAGE_TITLE;?></title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="museum community science exhibitions robotics AI biology history cosmology" />
         <meta name="description" content="Come see your local community science museum for all we have to offer, we have plenty of exhibitions about fantastic subjects like cosmlogy, biology and robotics" />
@@ -81,5 +84,10 @@
             <a class="nav-link <?php if ($CURRENT_PAGE == "Visit Us") {?>active<?php }?>" href="visit.php">Visit Us</a>
             <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="contact.php">Contact</a>
         </footer>
+
+        <?php startblock('scripts') ?>
+
+        <?php endblock() ?>
+
     </body>
 </html>

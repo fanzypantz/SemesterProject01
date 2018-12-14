@@ -1,6 +1,6 @@
 <?php include 'layout.php' ?>
 
-<?php startblock('head') ?>
+<?php startblock('scripts') ?>
 
     <script type="text/javascript" src="js/app.js"></script>
 
