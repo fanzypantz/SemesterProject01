@@ -21,6 +21,7 @@
     </head>
     <body>
         <header>
+            <img class="icon" src="images/logo.svg" alt="icon for the community science museum">
 
             <div class="hero-img"></div>
 

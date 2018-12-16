@@ -41,6 +41,12 @@ header {
   background-color: #0059a7;
   position: relative;
 }
+header .icon {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 100px;
+}
 header .hero-img {
   width: 50%;
   height: 100%;
@@ -49,9 +55,9 @@ header .hero-img {
 }
 header .hero-banner {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   margin: 0 auto;
   text-align: center;
   font-weight: 700;
@@ -67,9 +73,9 @@ header .hero-banner h2 {
 }
 header .nav {
   position: absolute;
-  bottom: 15%;
+  top: 10%;
   right: 50%;
-  transform: translate(50%, 50%);
+  transform: translate(50%, 10%);
   margin: 0 auto;
   text-align: center;
   font-size: 1.3em;
@@ -378,11 +384,16 @@ footer a {
   min-width: 500px;
 }
 #contact .contact-column .contact-info .contact-bg {
+  display: block;
   color: white;
   background-color: #B41912;
   font-size: 14px;
   line-height: 40px;
   font-weight: 700;
+  overflow: hidden;
+}
+#contact .contact-column .contact-info .contact-bg:hover {
+  background-color: #0a2135;
 }
 #contact #address-button {
   width: 160px;
@@ -433,12 +444,15 @@ footer a {
   header {
     height: 350px;
   }
+  header .icon {
+    width: 50px;
+  }
   header .hero-banner {
     top: 25% !important;
   }
   header .nav {
     width: 200px;
-    bottom: 34%;
+    top: 34%;
   }
   header .nav .nav-list {
     white-space: normal;
@@ -535,7 +549,7 @@ footer a {
     height: 500px;
   }
   header .nav {
-    bottom: 30%;
+    top: 48%;
   }
   header .hero-banner {
     top: 25% !important;
@@ -543,6 +557,17 @@ footer a {
   header .hero-banner h1 {
     white-space: normal !important;
     margin-bottom: 30px;
+  }
+
+  #contact #address_map #address {
+    width: 75%;
+  }
+  #contact .contact-column .contact-info {
+    min-width: auto;
+    width: 90%;
+  }
+  #contact svg {
+    width: 90%;
   }
 
   .contact .column .row {

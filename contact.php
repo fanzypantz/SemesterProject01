@@ -20,7 +20,7 @@
             </div>
             <div class="contact-info">
                 <p>Send us an  email:</p>
-                <p class="contact-bg">info@communitysciencemuseum.com</p>
+                <a class="contact-bg" href="mailto:info@communitysciencemuseum.com">info@communitysciencemuseum.com</a>
             </div>
             <div class="contact-info">
                 <p>Call us:</p>
