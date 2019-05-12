@@ -10,7 +10,19 @@
 
     <main class="container exhibition">
 
-        <article class="column">
+        <article class="column text-blob shadow-inset">
+            <div class="text">
+                <p>
+                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+                </p>
+                <p>
+                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="column space">
             <section id="cosmology" class="text text-blob half">
                 <h2 class="space-title">Cosmology</h2>
                 <p>
@@ -33,7 +45,19 @@
 
         </article>
 
-        <article id="biology" class="column text-blob">
+        <article class="column text-blob shadow-inset">
+            <div class="text">
+                <p>
+                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+                </p>
+                <p>
+                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                </p>
+            </div>
+
+        </article>
+
+        <article id="biology" class="column space text-blob">
             <section class="text">
                 <h2 class="space-title">Biology and Medicine</h2>
                 <p>
@@ -49,7 +73,19 @@
 
         </article>
 
-        <article class="column">
+        <article class="column text-blob shadow-inset">
+            <div class="text">
+                <p>
+                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+                </p>
+                <p>
+                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="column space">
             <section id="robotics" class="text text-blob half">
                 <h2 class="space-title">Robotics and AI</h2>
                 <p>
@@ -66,6 +102,18 @@
                     In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.
                 </p>
             </section>
+        </article>
+
+        <article class="column text-blob shadow-inset">
+            <div class="text">
+                <p>
+                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+                </p>
+                <p>
+                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                </p>
+            </div>
+
         </article>
 
     </main>

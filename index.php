@@ -8,7 +8,7 @@
         }
 
         header {
-            height: 500px;
+            height: 100vh; /*500px*/
         }
 
         header .hero-banner {
@@ -16,90 +16,14 @@
             left: 50%;
         }
 
-        header h1,
-        header h2 {
-            margin: 10px;
-        }
-
-        header h1 {
-            font-size: 2.8em;
-        }
-
-        header h2 {
-            font-size: 2em;
-        }
-
-        header .nav {
-            width: 175px;
-            margin: 0;
+        .icon {
+            width: 100px;
             top: 50%;
-            right: 5%;
-            transform: translate(-5%, -50%);
+            transform: translateY(-50%)
         }
 
-        header .nav .nav-list {
-            white-space: normal;
-            background-color: transparent;
-
-        }
-
-        header .nav .nav-list li {
-            display: list-item;
-            margin: 0;
-            background-color: transparent;
-        }
-
-        header .nav .nav-list li  a{
-            padding: 0;
-        }
-
-        header .nav .nav-list .svg {
-            display: inline-block;
-        }
-
-        @media screen and (max-width: 935px) {
-            header .hero-banner h1 {
-                white-space: normal;
-            }
-        }
-
-        @media screen and (max-width: 780px) {
-            header .hero-banner {
-                top: 70%;
-                left: 50%;
-
-            }
-
-            header .hero-banner h1 {
-                white-space: nowrap;
-            }
-
-            header .nav {
-                width: 200px;
-                top: 48%;
-                left: 50%;
-                transform: translateX(-50%)
-            }
-
-            header .nav .nav-list li {
-                display: inline-block;
-                margin: 2px;
-            }
-
-            header .nav .nav-list li a{
-                padding: 2px 10px;
-                background-color: #0059a7;
-            }
-
-            header .nav .nav-list .svg {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 520px) {
-            header .nav {
-                top: 53%;
-            }
+        footer {
+            box-shadow: 0 -10px 20px 2px rgba(0, 0, 0, 0.4)
         }
 
     </style>
@@ -114,8 +38,8 @@
 
 <?php startblock('content') ?>
 
-    <main class="container">
-        <article id="about" class="column text-blob">
+    <main class="container index">
+        <article id="about" class="column text-blob shadow-inset">
             <div class="text">
                 <p>
                     Come join us at the Community Science Museum where we’re committed to making science accessible to all.
@@ -128,7 +52,7 @@
         </article>
 
         <article class="column">
-            <div class="row text">
+            <div class="description text">
                 <h2>What We Do</h2>
                 <p>
                     The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
@@ -141,7 +65,7 @@
 
         </article>
 
-        <article id="club" class="column text-blob">
+        <article id="club" class="column text-blob shadow-inset">
             <div class="text">
                 <p>
                     During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.
@@ -152,7 +76,7 @@
 
         <article class="column">
             <div id="for-kids" class="img"></div>
-            <div class="row text">
+            <div class="description text">
                 <h2>For Kids</h2>
                 <p>
                     Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
@@ -165,7 +89,7 @@
 
         </article>
 
-        <article id="entrance" class="column text-blob">
+        <article id="entrance" class="column text-blob shadow-inset">
             <div class="text">
                 <p>
                     The entrance is free for all.
@@ -177,7 +101,7 @@
         </article>
 
         <article class="column">
-            <div class="row text">
+            <div class="description text">
                 <h2>For Teachers</h2>
                 <p>
                     As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
@@ -189,7 +113,7 @@
             <div id="for-teachers" class="img"></div>
         </article>
 
-        <article id="accessibility" class="column text-blob">
+        <article id="accessibility" class="column text-blob shadow-inset">
             <div class="text">
                 <p>
                     The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
@@ -204,7 +128,7 @@
         </article>
 
         <article class="column">
-            <div class="row text">
+            <div class="description text">
                 <h2>For Researchers</h2>
                 <p>
                     Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.

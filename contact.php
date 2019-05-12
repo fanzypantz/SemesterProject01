@@ -9,7 +9,7 @@
 <?php startblock('content') ?>
 
     <main id="contact" class="container contact">
-        <div class="contact-column">
+        <div class="contact-column shadow-inset">
             <div id="contact-us">
                 <h2>Contact Us</h2>
                 <svg height="8" width="500">
@@ -18,11 +18,11 @@
                 <p>Community Science Museum wants to hear of any inquiry you might have,</p>
                 <p>answer any question you might need answered. We are here for you to grow and learn.</p>
             </div>
-            <div class="contact-info">
+            <div id="email" class="contact-info">
                 <p>Send us an  email:</p>
                 <a class="contact-bg" href="mailto:info@communitysciencemuseum.com">info@communitysciencemuseum.com</a>
             </div>
-            <div class="contact-info">
+            <div id="phone" class="contact-info">
                 <p>Call us:</p>
                 <p class="contact-bg">(973)925-9393</p>
             </div>

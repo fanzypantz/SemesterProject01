@@ -30,34 +30,14 @@
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php" title="Home">Home</a>
                     </li>
-                    <li class="svg">
-                        <svg height="8" width="80">
-                            <line x1="0" y1="0" x2="80" y2="0" />
-                        </svg>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Exhibitions") {?>active<?php }?>" href="exhibitions.php" title="Exhibition spaces">Exhibitions</a>
-                    </li>
-                    <li class="svg">
-                        <svg height="8" width="80">
-                            <line x1="0" y1="0" x2="80" y2="0" />
-                        </svg>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Involvement") {?>active<?php }?>" href="involvement.php" title="Get involved with the museum">Get Involved</a>
                     </li>
-                    <li  class="svg">
-                        <svg height="8" width="80">
-                            <line x1="0" y1="0" x2="80" y2="0" />
-                        </svg>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="contact.php" title="Contact Us">Contact Us</a>
-                    </li>
-                    <li  class="svg">
-                        <svg height="8" width="80">
-                            <line x1="0" y1="0" x2="80" y2="0" />
-                        </svg>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Visit Us") {?>active<?php }?>" href="visit.php" title="Visit Us">Visit Us</a>
@@ -79,11 +59,46 @@
         <?php endblock() ?>
 
         <footer>
-            <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php" title="Home">Home</a>
-            <a class="nav-link <?php if ($CURRENT_PAGE == "Exhibitions") {?>active<?php }?>" href="exhibitions.php" title="Exhibition spaces">Exhibitions</a>
-            <a class="nav-link <?php if ($CURRENT_PAGE == "Involvement") {?>active<?php }?>" href="involvement.php" title="Get involved with the museum">Get Involved</a>
-            <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="contact.php" title="Contact Us">Contact Us</a>
-            <a class="nav-link <?php if ($CURRENT_PAGE == "Visit Us") {?>active<?php }?>" href="visit.php" title="Visit Us">Visit Us</a>
+
+            <img class="icon" src="images/logo.svg" alt="icon for the community science museum">
+
+            <div class="link-container">
+                <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php" title="Home">Home</a>
+                <a class="nav-link" href="index.php#what-we-do" title="Home">What We Do</a>
+                <a class="nav-link" href="index.php#for-kids" title="Home">For Kids</a>
+                <a class="nav-link" href="index.php#for-teachers" title="Home">For Teachers</a>
+                <a class="nav-link" href="index.php#for-researchers" title="Home">For Researchers</a>
+            </div>
+            <div class="link-container">
+                <a class="nav-link <?php if ($CURRENT_PAGE == "Exhibitions") {?>active<?php }?>" href="exhibitions.php" title="Exhibition spaces">Exhibitions</a>
+                <a class="nav-link" href="exhibitions.php#cosmology" title="Home">Cosmology</a>
+                <a class="nav-link" href="exhibitions.php#evolution" title="Home">Evolution</a>
+                <a class="nav-link" href="exhibitions.php#biology" title="Home">Biology and Medicine</a>
+                <a class="nav-link" href="exhibitions.php#robotics" title="Home">Robotics and AI</a>
+                <a class="nav-link" href="exhibitions.php#ecology" title="Home">Ecology</a>
+            </div>
+            <div class="link-container">
+                <a class="nav-link <?php if ($CURRENT_PAGE == "Involvement") {?>active<?php }?>" href="involvement.php" title="Get involved with the museum">Get Involved</a>
+                <a class="nav-link" href="involvement.php#support" title="Home">Support</a>
+                <a class="nav-link" href="involvement.php#volunteer" title="Home">Volunteers</a>
+                <a class="nav-link" href="involvement.php#internships" title="Home">Internships</a>
+            </div>
+            <div class="link-container">
+                <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="contact.php" title="Contact Us">Contact Us</a>
+                <a class="nav-link" href="contact.php#email" title="Home">By Email</a>
+                <a class="nav-link" href="contact.php#phone" title="Home">By Phone</a>
+                <a class="nav-link" href="contact.php#address" title="Home">Our Address</a>
+            </div>
+            <div class="link-container">
+                <a class="nav-link <?php if ($CURRENT_PAGE == "Visit Us") {?>active<?php }?>" href="visit.php" title="Visit Us">Visit Us</a>
+                <a class="nav-link" href="visit.php#location" title="Home">Location</a>
+                <a class="nav-link" href="visit.php#hours" title="Home">Opening Hours</a>
+                <a class="nav-link" href="visit.php#shop" title="Home">Gift Shop</a>
+                <a class="nav-link" href="visit.php#admission" title="Home">Admission</a>
+                <a class="nav-link" href="visit.php#tours" title="Home">Guided Tours</a>
+                <a class="nav-link" href="visit.php#impaired" title="Home">Accessibility</a>
+                <a class="nav-link" href="visit.php#food" title="Home">Food and Drinks</a>
+            </div>
         </footer>
 
         <?php startblock('scripts') ?>
