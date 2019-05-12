@@ -16,7 +16,7 @@ p, h1, h2, h3, h4, h5
 
 p
   font-family: $font-family
-  font-weight: 300
+  font-weight: 400
 
 a
   color: $font
@@ -41,6 +41,7 @@ li
   top: 8%
   left: 5%
   width: 50px
+  z-index: 100
 
 header
   height: $header-height
@@ -48,7 +49,13 @@ header
   position: relative
   //border-bottom: 2px solid $secondary
 
-
+  #mobile-button
+    position: absolute
+    width: 100px
+    right: 5%
+    top: 5%
+    display: none
+    z-index: 100
 
   .hero-img
     width: 100%
@@ -152,7 +159,7 @@ footer
 .column
   display: flex
 
-  height: 500px
+  height: 300px
   width: 100%
 
   .img
@@ -167,7 +174,6 @@ footer
   margin: 0 auto
 
   h2
-    text-shadow: $text-shadow
     color: $secondary
 
   p
@@ -181,9 +187,35 @@ footer
   text-align: center
   cursor: pointer
 
-  p, h1
+  p
     font-size: 1.1em
     color: $font-secondary
+
+  h1
+    font-size: 1.5em
+    color: $secondary
+    border-bottom: $header-border
+
+  .call-to-action
+    width: 80%
+    height: 100%
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+
+    a
+      width: 230px
+      height: 40px
+      line-height: 40px
+      background-color: $secondary
+      margin: 0 20px
+      border-radius: 5px
+
+      &:hover
+        background-color: $font
+        color: $secondary
 
 .active
   color: $secondary
@@ -198,8 +230,7 @@ footer
   box-shadow: inset 0 0 20px 2px rgba(0, 0, 0, 0.4)
 
 .card-container
-  width: 80%
-  margin: 0 auto
+  width: 100%
   height: 600px
   display: flex
   flex-direction: row
@@ -208,6 +239,7 @@ footer
 
   .card
     box-shadow: 0 15px 5px -10px rgba(0, 0, 0, 0.5)
+    background-color: white
     margin: 20px
     width: calc( 100% / 3 )
     height: 450px
@@ -220,11 +252,16 @@ footer
       flex-direction: column
       justify-content: center
       align-items: center
+      overflow-x: scroll
+
+      table
+        min-width: 260px
+
 
     p
       margin: 10px 0
-      color: $font
-      text-shadow: $text-shadow
+      color: $font-secondary
+      //text-shadow: $text-shadow
 
     h2
       text-shadow: $text-shadow
@@ -232,6 +269,17 @@ footer
       text-align: center
       margin: 0
       line-height: 50px
-      background-color: $secondary-opacity
+      background-color: $secondary
       box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.4)
 
+.social
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  a
+    margin: 0 20px
+
+  img
+    width: 75px

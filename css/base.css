@@ -17,8 +17,8 @@ p, h1, h2, h3, h4, h5 {
 }
 
 p {
-  font-family: acumin-pro, sans-serif;
-  font-weight: 300;
+  font-family: pt-sans, sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -46,12 +46,21 @@ li {
   top: 8%;
   left: 5%;
   width: 50px;
+  z-index: 100;
 }
 
 header {
   height: 200px;
   background-color: #323232;
   position: relative;
+}
+header #mobile-button {
+  position: absolute;
+  width: 100px;
+  right: 5%;
+  top: 5%;
+  display: none;
+  z-index: 100;
 }
 header .hero-img {
   width: 100%;
@@ -130,7 +139,7 @@ footer .link-container {
   align-items: flex-start;
 }
 footer .link-container a {
-  font-family: acumin-pro, sans-serif;
+  font-family: pt-sans, sans-serif;
   font-weight: 300;
   font-size: 0.9em;
 }
@@ -156,7 +165,7 @@ footer .link-container .nav-link:hover {
 
 .column {
   display: flex;
-  height: 500px;
+  height: 300px;
   width: 100%;
 }
 .column .img {
@@ -172,7 +181,6 @@ footer .link-container .nav-link:hover {
   margin: 0 auto;
 }
 .text h2 {
-  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.6);
   color: #B41912;
 }
 .text p {
@@ -187,9 +195,35 @@ footer .link-container .nav-link:hover {
   text-align: center;
   cursor: pointer;
 }
-.text-blob p, .text-blob h1 {
+.text-blob p {
   font-size: 1.1em;
   color: black;
+}
+.text-blob h1 {
+  font-size: 1.5em;
+  color: #B41912;
+  border-bottom: 5px solid rgba(180, 25, 18, 0.89);
+}
+.text-blob .call-to-action {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.text-blob .call-to-action a {
+  width: 230px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #B41912;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+.text-blob .call-to-action a:hover {
+  background-color: white;
+  color: #B41912;
 }
 
 .active {
@@ -209,8 +243,7 @@ footer .link-container .nav-link:hover {
 }
 
 .card-container {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   height: 600px;
   display: flex;
   flex-direction: row;
@@ -219,6 +252,7 @@ footer .link-container .nav-link:hover {
 }
 .card-container .card {
   box-shadow: 0 15px 5px -10px rgba(0, 0, 0, 0.5);
+  background-color: white;
   margin: 20px;
   width: calc( 100% / 3 );
   height: 450px;
@@ -231,11 +265,14 @@ footer .link-container .nav-link:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: scroll;
+}
+.card-container .card .card-text table {
+  min-width: 260px;
 }
 .card-container .card p {
   margin: 10px 0;
-  color: white;
-  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.6);
+  color: black;
 }
 .card-container .card h2 {
   text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.6);
@@ -243,11 +280,34 @@ footer .link-container .nav-link:hover {
   text-align: center;
   margin: 0;
   line-height: 50px;
-  background-color: rgba(180, 25, 18, 0.89);
+  background-color: #B41912;
   box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.4);
 }
 
+.social {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a {
+  margin: 0 20px;
+}
+.social img {
+  width: 75px;
+}
+
 /* Index Section */
+.index .text-blob {
+  background-color: #323232;
+}
+.index .text-blob p {
+  color: white;
+}
+.index .about {
+  height: 500px;
+}
 .index .description {
   width: 32%;
 }
@@ -255,14 +315,6 @@ footer .link-container .nav-link:hover {
 #what-we-do {
   background: url(../images/index_bg_02.jpg) no-repeat center center;
   background-size: cover;
-}
-
-#club {
-  background: url(../images/index_bg_01.jpg) no-repeat center center;
-  background-size: cover;
-}
-#club .text p {
-  color: white;
 }
 
 #for-kids {
@@ -275,16 +327,8 @@ footer .link-container .nav-link:hover {
   background-size: cover;
 }
 
-#accessibility {
-  background: url(../images/index_bg_07.jpg) no-repeat center center;
-  background-size: cover;
-}
-#accessibility .text p {
-  color: white;
-}
-
 #for-researchers {
-  background: url(../images/index_bg_06.jpg) no-repeat center center;
+  background: url(../images/index_bg_08.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -333,23 +377,17 @@ footer .link-container .nav-link:hover {
 
 /* Visit Section */
 /* Involvement Section */
+.info-pages .card-container {
+  width: 80%;
+  margin: 0 auto;
+}
 .info-pages .main {
   height: auto;
   flex-direction: column;
 }
 
-#support {
-  background: url(../images/exhibition_bg_01.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#volunteer {
-  background: url(../images/exhibition_bg_04.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#internships {
-  background: url(../images/exhibition_bg_05.jpg) no-repeat center center;
+#involvement-bg {
+  background: url(../images/involvement_bg_01.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -359,19 +397,12 @@ footer .link-container .nav-link:hover {
   background: url(../images/contact_bg_01.jpg) no-repeat center center;
   background-size: cover;
 }
-#contact p, #contact h2 {
-  color: white;
-}
-#contact svg {
-  stroke: #B41912;
-  stroke-width: 10px;
-}
 #contact #address_map {
   position: relative;
 }
 #contact #address_map #map {
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
 }
 #contact #address_map #address {
   z-index: 9;
@@ -396,6 +427,7 @@ footer .link-container .nav-link:hover {
 }
 #contact #address_map #address #address-text p {
   margin: 2px;
+  color: white;
 }
 #contact #address_map #address #address-text .address-text {
   margin: 10px auto;
@@ -419,7 +451,7 @@ footer .link-container .nav-link:hover {
   width: 100%;
 }
 #contact .contact-column {
-  min-height: 600px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -433,17 +465,16 @@ footer .link-container .nav-link:hover {
 #contact .contact-column #contact-us p {
   margin: 5px;
 }
-#contact .contact-column #contact-us h2 {
-  margin: 0;
-  font-size: 2.2em;
-}
 #contact .contact-column .contact-info {
   min-width: 500px;
+}
+#contact .contact-column .contact-info h2 {
+  color: white;
 }
 #contact .contact-column .contact-info .contact-bg {
   display: block;
   color: white;
-  background-color: #B41912;
+  background-color: rgba(180, 25, 18, 0.89);
   font-size: 14px;
   line-height: 40px;
   font-weight: 700;
@@ -460,7 +491,7 @@ footer .link-container .nav-link:hover {
   top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #B41912;
+  background-color: rgba(180, 25, 18, 0.89);
 }
 #contact #address-button p {
   line-height: 30px;
@@ -470,6 +501,28 @@ footer .link-container .nav-link:hover {
 }
 
 /* Media Queries Section */
+@media screen and (max-width: 1284px) {
+  footer .icon {
+    top: auto;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+  }
+
+  .contact .row {
+    padding-top: 40px;
+    min-height: 650px;
+  }
+
+  .involvement .row {
+    padding: 50px 0;
+  }
+
+  .visit .card-container .card {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 1111px) {
   header .hero-banner h1 {
     white-space: nowrap;
@@ -479,10 +532,6 @@ footer .link-container .nav-link:hover {
   }
   header .nav .nav-list li {
     margin: 2px;
-  }
-
-  .column .row {
-    width: 50%;
   }
 
   .text {
@@ -496,144 +545,181 @@ footer .link-container .nav-link:hover {
   .exhibition .half p {
     margin: 20px 50px;
   }
+
+  .info-pages .card-container {
+    width: 95%;
+  }
+  .info-pages .card-container .card {
+    margin: 10px;
+    height: 500px;
+  }
 }
 @media screen and (max-width: 780px) {
-  header {
-    height: 350px;
-  }
-  header .icon {
-    width: 50px;
-  }
-  header .hero-banner {
-    top: 25% !important;
+  header #mobile-button {
+    display: block;
   }
   header .nav {
-    width: 200px;
-    top: 34%;
-  }
-  header .nav .nav-list {
-    white-space: normal;
-    background-color: transparent;
-  }
-  header .nav .nav-list a {
-    margin: 0;
+    display: none;
     background-color: #323232;
-  }
-  header .nav .nav-list li {
-    width: 100%;
-    display: inline-block;
-    margin: 2px;
-  }
-
-  footer {
-    padding: 15px 0;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-around;
-  }
-
-  .column .row {
-    padding: 100px 0;
-    margin: 0;
-    width: 100%;
-  }
-  .column .row p {
-    margin: 10px 40px;
-  }
-
-  .column:nth-child(even) {
-    flex-direction: column;
-    height: auto;
-    position: relative;
-    background-color: rgba(180, 25, 18, 0.89);
-  }
-  .column:nth-child(even) h2 {
-    color: white;
-  }
-  .column:nth-child(even) p {
-    color: white;
-  }
-  .column:nth-child(even) .img {
-    z-index: -10;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    right: unset;
+    transform: unset;
     width: 100%;
+    height: 250px;
+  }
+  header .nav .nav-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .link-container {
+    margin: 80px 10px 0 10px;
   }
 
   .text {
+    width: 90%;
+  }
+
+  .index .description {
+    width: 50%;
+  }
+
+  .exhibition .half {
+    min-height: 50%;
     width: 100%;
-    margin: 0;
   }
-
-  .text-blob {
-    height: auto;
-  }
-  .text-blob .text {
-    margin: 100px 0;
-  }
-
-  .exhibition .column {
-    height: auto;
+  .exhibition .space {
+    height: 1200px;
+    min-height: 1200px;
     flex-direction: column;
   }
-  .exhibition .column .half {
+  .exhibition #biology {
+    height: 600px;
     min-height: 600px;
-    width: 100%;
-  }
-  .exhibition .column .half p {
-    margin: 20px;
   }
 
-  .contact .column {
+  .admission, .visit {
+    height: auto;
+  }
+  .admission .card-container, .visit .card-container {
     padding: 50px 0;
+    height: auto;
     flex-direction: column;
   }
-  .contact .column .row {
-    margin: 50px 0;
-    min-height: 510px;
-    border: none;
-    width: 80%;
-    padding: 0;
+  .admission .card-container .card, .visit .card-container .card {
+    width: 90%;
+    height: auto;
   }
-  .contact .column .row p {
-    margin: 16px 0;
+  .admission .card-container .card .card-text, .visit .card-container .card .card-text {
+    margin: 20px auto;
+  }
+  .admission .card-container .card .card-text p, .visit .card-container .card .card-text p {
+    width: 80%;
   }
 }
 @media screen and (max-width: 520px) {
-  header {
-    height: 500px;
-  }
-  header .nav {
-    top: 48%;
+  header .icon {
+    width: 50px;
+    top: 20%;
+    transform: none;
   }
   header .hero-banner {
-    top: 25% !important;
+    width: 100%;
   }
   header .hero-banner h1 {
-    white-space: normal !important;
-    margin-bottom: 30px;
+    width: 100%;
+    word-wrap: break-word;
+    white-space: inherit;
+  }
+
+  footer {
+    height: auto;
+    flex-direction: column;
+  }
+  footer .link-container {
+    width: 50%;
+    margin: 20px;
+  }
+  footer .icon {
+    top: 5%;
+    bottom: auto;
+    left: 5%;
+    transform: none;
+  }
+
+  .text-blob {
+    height: 500px;
+  }
+  .text-blob .call-to-action {
+    width: 90%;
+  }
+  .text-blob .call-to-action a {
+    width: 100%;
+  }
+
+  .index .about {
+    flex-direction: column;
+    min-height: 800px;
+  }
+  .index .description {
+    height: 50%;
+    width: 90%;
+  }
+  .index .img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .exhibition .space {
+    height: 1400px;
+    min-height: 1400px;
+  }
+  .exhibition #biology {
+    height: 700px;
+    min-height: 700px;
   }
 
   #contact #address_map #address {
-    width: 75%;
+    width: 80%;
   }
   #contact .contact-column .contact-info {
+    width: 100%;
     min-width: auto;
-    width: 90%;
   }
-  #contact svg {
-    width: 90%;
+  #contact .contact-column .contact-info h2 {
+    width: 100%;
+    word-wrap: break-word;
   }
-
-  .contact .column .row {
-    width: 95%;
+  #contact .contact-column .contact-info .contact-bg {
+    width: 100%;
+    word-wrap: break-word;
   }
 }
 @media screen and (max-width: 380px) {
+  .index .about {
+    min-height: 1000px;
+  }
+
   .column .row p {
     margin: 10px 5px;
+  }
+
+  .exhibition .space {
+    height: 1600px;
+    min-height: 1600px;
+  }
+  .exhibition #biology {
+    height: 1000px;
+    min-height: 1000px;
+  }
+
+  .social {
+    flex-direction: column;
   }
 }
 /* Visit Media Queries Section */
@@ -658,16 +744,6 @@ footer .link-container .nav-link:hover {
 @media screen and (max-width: 1400px) {
   .contact .row {
     padding: 0 30px;
-  }
-
-  .involvement .row {
-    padding: 50px 0;
-  }
-}
-@media screen and (max-width: 1284px) {
-  .contact .row {
-    padding-top: 40px;
-    min-height: 650px;
   }
 
   .involvement .row {

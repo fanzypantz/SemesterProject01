@@ -25,7 +25,7 @@
 
             <div class="hero-img"></div>
 
-            <nav class="nav">
+            <nav id="nav" class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php" title="Home">Home</a>
@@ -45,6 +45,7 @@
                 </ul>
             </nav>
 
+            <img id="mobile-button" src="images/menu.svg" alt="mobile meu button">
 
             <div class="hero-banner">
                 <h1>Community Science Museum</h1>
@@ -101,6 +102,7 @@
             </div>
         </footer>
 
+        <script type="text/javascript" src="js/main.js"></script>
         <?php startblock('scripts') ?>
 
         <?php endblock() ?>

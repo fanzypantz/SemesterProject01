@@ -39,7 +39,7 @@ $(document).ready(function() {
             isAnimating = true;
 
             $currentTarget.animate({
-                height: '500px'
+                height: '300px'
             }, '500', function () {
                 setTimeout(disableAnimation, 100)
             });

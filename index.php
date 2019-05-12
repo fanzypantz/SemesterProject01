@@ -32,7 +32,7 @@
 
 <?php startblock('scripts') ?>
 
-    <script type="text/javascript" src="js/index.js"></script>
+<!--    <script type="text/javascript" src="js/index.js"></script>-->
 
 <?php endblock() ?>
 
@@ -40,18 +40,25 @@
 
     <main class="container index">
         <article id="about" class="column text-blob shadow-inset">
-            <div class="text">
-                <p>
-                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-                </p>
-                <p>
-                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
-                </p>
+<!--            <div class="text">-->
+<!--                <p>-->
+<!--                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.-->
+<!--                </p>-->
+<!--            </div>-->
+            <div class="call-to-action">
+                <a href="visit.php#hours">Opening Hours</a>
+                <a href="visit.php#tours">Guided Tours</a>
+                <a href="contact.php">Contact Us</a>
+                <a href="visit.php#shop">Gift Shop</a>
+                <a href="visit.php#food">Food and Drinks</a>
             </div>
 
         </article>
 
-        <article class="column">
+        <article class="column about">
             <div class="description text">
                 <h2>What We Do</h2>
                 <p>
@@ -74,7 +81,7 @@
 
         </article>
 
-        <article class="column">
+        <article class="column about">
             <div id="for-kids" class="img"></div>
             <div class="description text">
                 <h2>For Kids</h2>
@@ -90,17 +97,24 @@
         </article>
 
         <article id="entrance" class="column text-blob shadow-inset">
-            <div class="text">
-                <p>
-                    The entrance is free for all.
-                </p>
-                <p>
-                    There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
-                </p>
+<!--            <div class="text">-->
+<!--                <p>-->
+<!--                    The entrance is free for all.-->
+<!--                </p>-->
+<!--                <p>-->
+<!--                    There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.-->
+<!--                </p>-->
+<!--            </div>-->
+            <div class="call-to-action">
+                <a href="exhibitions.php#cosmology">Cosmology</a>
+                <a href="exhibitions.php#evolution">Evolution</a>
+                <a href="exhibitions.php#biology">Biology and Medicine</a>
+                <a href="exhibitions.php#robotics">Robotics and AI</a>
+                <a href="exhibitions.php#ecology">Ecology</a>
             </div>
         </article>
 
-        <article class="column">
+        <article class="column about">
             <div class="description text">
                 <h2>For Teachers</h2>
                 <p>
@@ -127,14 +141,13 @@
             </div>
         </article>
 
-        <article class="column">
+        <article class="column about">
+            <div id="for-researchers" class="img"></div>
             <div class="description text">
                 <h2>For Researchers</h2>
                 <p>
                     Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.
                 </p>
-            </div>
-            <div id="for-researchers" class="img">
             </div>
         </article>
 

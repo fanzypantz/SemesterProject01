@@ -5,19 +5,12 @@
   background: url(../images/contact_bg_01.jpg) no-repeat center center
   background-size: cover
 
-  p, h2
-    color: $font
-
-  svg
-    stroke: $secondary
-    stroke-width: 10px
-
   #address_map
     position: relative
 
     #map
       width: 100%
-      min-height: 600px
+      min-height: 500px
 
     #address
       z-index: 9
@@ -42,6 +35,7 @@
 
         p
           margin: 2px
+          color: $font
 
         .address-text
           margin: 10px auto
@@ -67,7 +61,7 @@
 
 
   .contact-column
-    min-height: 600px
+    min-height: 500px
     width: 100%
     display: flex
     flex-direction: column
@@ -81,17 +75,21 @@
       p
         margin: 5px
 
-      h2
-        margin: 0
-        font-size: 2.2em
+      //h2
+      //  border-bottom: $header-border
+      //  margin: 0
+      //  font-size: 2.2em
 
     .contact-info
       min-width: 500px
 
+      h2
+        color: $font
+
       .contact-bg
         display: block
         color: $font
-        background-color: $secondary
+        background-color: $secondary-opacity
         font-size: 14px
         line-height: 40px
         font-weight: 700
@@ -108,7 +106,7 @@
     top: 5%
     left: 50%
     transform: translate(-50%, -50%)
-    background-color: $secondary
+    background-color: $secondary-opacity
 
     p
       line-height: 30px

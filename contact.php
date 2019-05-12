@@ -9,24 +9,35 @@
 <?php startblock('content') ?>
 
     <main id="contact" class="container contact">
-        <div class="contact-column shadow-inset">
-            <div id="contact-us">
-                <h2>Contact Us</h2>
-                <svg height="8" width="500">
-                    <line x1="0" y1="0" x2="500" y2="0" />
-                </svg>
+        <article class="column text-blob shadow-inset">
+            <div class="text">
+                <h1>Contact Us</h1>
                 <p>Community Science Museum wants to hear of any inquiry you might have,</p>
                 <p>answer any question you might need answered. We are here for you to grow and learn.</p>
             </div>
+
+        </article>
+
+        <div class="contact-column shadow-inset">
             <div id="email" class="contact-info">
-                <p>Send us an  email:</p>
+                <h2>Send Us An Email:</h2>
                 <a class="contact-bg" href="mailto:info@communitysciencemuseum.com">info@communitysciencemuseum.com</a>
             </div>
             <div id="phone" class="contact-info">
-                <p>Call us:</p>
+                <h2>Give Us a Call:</h2>
                 <p class="contact-bg">(973)925-9393</p>
             </div>
         </div>
+
+        <article class="column text-blob shadow-inset">
+            <div class="social">
+                <a href=""><img src="./images/facebook.svg" alt="facebook"></a>
+                <a href=""><img src="./images/instagram.svg" alt="instagram"></a>
+                <a href=""><img src="./images/linkedin.svg" alt="linkedin"></a>
+            </div>
+
+        </article>
+
         <div id="address_map" class="contact-column">
             <div id="address">
                 <img id="map_bg" src="images/map_bg.svg" alt="background marker for the map">

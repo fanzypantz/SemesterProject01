@@ -12,6 +12,7 @@
 
         <article class="column text-blob shadow-inset">
             <div class="text">
+                <h1>Check out our exhibitions</h1>
                 <p>
                     Come join us at the Community Science Museum where we’re committed to making science accessible to all.
                 </p>
@@ -48,10 +49,10 @@
         <article class="column text-blob shadow-inset">
             <div class="text">
                 <p>
-                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
+                    We have hundreds of items on display covering all sections of science, history and nature.
                 </p>
                 <p>
-                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
 
@@ -76,10 +77,7 @@
         <article class="column text-blob shadow-inset">
             <div class="text">
                 <p>
-                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-                </p>
-                <p>
-                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
 
@@ -107,10 +105,7 @@
         <article class="column text-blob shadow-inset">
             <div class="text">
                 <p>
-                    Come join us at the Community Science Museum where we’re committed to making science accessible to all.
-                </p>
-                <p>
-                    Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
             </div>
 
